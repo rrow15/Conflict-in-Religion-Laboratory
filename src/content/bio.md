@@ -1,7 +1,7 @@
 ---
 name: "Conflict in Religion Laboratory"
 avatar: "core-logo.png"
-shortBio: "The Conflict in Religion Research Group (CORE) investigates religion through the lens of psychology."
+shortBio: "A young man named Eutychus falls asleep during a very long sermon by Paul, drops from a third-story window, and is picked up dead. Paul goes downstairs, embraces him, and announces that he is alive. Acts 20:9-10 "
 institution: "De La Salle University"
 ---
 The **Conflict in Religion Research Group (CORE)** is an interdisciplinary research group dedicated to understanding religion through the lens of psychology. Situated within the context of predominantly religious societies such as the Philippines, our work examines how religion shapes the way people think, feel, behave, and relate to one another across personal, social, cultural, and political life.

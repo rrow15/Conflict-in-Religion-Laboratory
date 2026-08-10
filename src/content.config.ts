@@ -81,7 +81,11 @@ const bio = defineCollection({
         pattern: "**/*.md",
         base: "./src/content/bio",
     }),
-    schema: z.object({}),
+    schema: z.object({
+        name: z.string().optional(),
+        institution: z.string().optional(),
+        shortBio: z.string().optional(),
+    }),
 });
 
 const projects = defineCollection({
