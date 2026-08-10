@@ -2,30 +2,66 @@
 import { getEntry, render } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { PAGES } from "../config";
+import PhotoCarousel from "../components/home/PhotoCarousel.astro";
 
-// Load bio content
-const bioEntry = await getEntry("bio", "bio");
-const { Content: BioContent } = bioEntry
-	? await render(bioEntry)
-	: { Content: null };
+const aboutEntry = await getEntry("bio", "about");
+const missionEntry = await getEntry("bio", "mission");
+const visionEntry = await getEntry("bio", "vision");
+const researchAreasEntry = await getEntry("bio", "research-areas");
+
+const { Content: AboutContent } = aboutEntry
+    ? await render(aboutEntry)
+    : { Content: null };
+
+const { Content: MissionContent } = missionEntry
+    ? await render(missionEntry)
+    : { Content: null };
+
+const { Content: VisionContent } = visionEntry
+    ? await render(visionEntry)
+    : { Content: null };
+
+const { Content: ResearchAreasContent } = researchAreasEntry
+    ? await render(researchAreasEntry)
+    : { Content: null };
 ---
 
 <BaseLayout title={PAGES.home.title}>
-	<div class="container-narrow">
-		{
-			(PAGES.home.title || PAGES.home.subtitle) && (
-				<header class="page-header">
-					{PAGES.home.title && (
-						<h1 class="page-title">{PAGES.home.title}</h1>
-					)}
-					{PAGES.home.subtitle && (
-						<p class="page-subtitle">{PAGES.home.subtitle}</p>
-					)}
-				</header>
-			)
-		}
-		<div class="prose">
-			{BioContent ? <BioContent /> : <p>Loading bio...</p>}
-		</div>
-	</div>
+    <div class="container-narrow">
+
+        <header class="page-header">
+            <h1 class="page-title">About</h1>
+        </header>
+
+        <div class="prose">
+            {AboutContent && <AboutContent />}
+        </div>
+
+        <PhotoCarousel />
+
+        <section class="section">
+            <h2 class="section-title">Mission</h2>
+
+            <div class="prose">
+                {MissionContent && <MissionContent />}
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Vision</h2>
+
+            <div class="prose">
+                {VisionContent && <VisionContent />}
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Research Areas</h2>
+
+            <div class="prose">
+                {ResearchAreasContent && <ResearchAreasContent />}
+            </div>
+        </section>
+
+    </div>
 </BaseLayout>
