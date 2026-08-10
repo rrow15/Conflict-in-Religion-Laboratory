@@ -1,7 +1,7 @@
 import type { SiteConfig, ThemeConfig, SettingsConfig, UmamiAnalyticsConfig, AnalyticsConfig } from "../types";
 
 export const SITE: SiteConfig = {
-    website: "https://shannon.github.io/academic-portfolio-astro/",
+    website: "https://rrow15.github.io/Conflict-in-Religion-Laboratory/",
     author: "Conflict in Religion Research Group",
     desc: "The Conflict in Religion Research Group conducts interdisciplinary research on religion, psychology, history, and society.",
     title: "Conflict in Religion Research Group",

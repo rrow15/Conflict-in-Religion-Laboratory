@@ -5,18 +5,19 @@ const currentPath = Astro.url.pathname;
 ---
 
 <nav class="navbar flex items-center gap-6">
+    <a
+        href={import.meta.env.BASE_URL}
+        class="flex items-center gap-2"
+        style="text-decoration: none;"
+    >
+        <img
+            src={`${import.meta.env.BASE_URL}images/CORElogo.png`}
+            alt="CORE Logo"
+            class="h-10 w-10 rounded-full object-cover"
+        />
 
-<a href="/" class="flex items-center gap-2" style="text-decoration: none;">
-    <img
-        src="/images/CORElogo.png"
-        alt="CORE Logo"
-        class="h-10 w-10 rounded-full object-cover"
-    />
-
-    <span class="font-bold text-lg">
-        CORE
-    </span>
-</a>
+        <span class="font-bold text-lg"> CORE </span>
+    </a>
 
     <ul class="nav-links">
         {
@@ -30,7 +31,11 @@ const currentPath = Astro.url.pathname;
             }).map((link) => (
                 <li>
                     <a
-                        href={link.href}
+                        href={
+                            link.href === "/"
+                                ? import.meta.env.BASE_URL
+                                : `${import.meta.env.BASE_URL}${link.href.replace(/^\/+/, "")}`
+                        }
                         class={`nav-link ${
                             currentPath === link.href ||
                             (link.href !== "/" &&
