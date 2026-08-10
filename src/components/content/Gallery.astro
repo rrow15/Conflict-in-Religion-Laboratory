@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-import ResearchCard from "../../components/cards/ResearchCard.astro";
 
 const research = await getCollection("research");
 
@@ -22,11 +21,5 @@ research.sort((a, b) => {
                 Research Group.
             </p>
         </header>
-
-        <div class="grid gap-6">
-            {research.map((project) => (
-                <ResearchCard research={project} />
-            ))}
-        </div>
     </div>
 </BaseLayout>

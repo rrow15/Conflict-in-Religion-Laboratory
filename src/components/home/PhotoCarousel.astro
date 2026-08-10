@@ -9,56 +9,61 @@ const images = readdirSync(galleryPath)
     .map((file) => `${import.meta.env.BASE_URL}/gallery/${file}`);
 ---
 
-{images.length > 0 && (
-    <div class="photo-carousel">
-        <div class="carousel-track">
-            {images.map((image, index) => (
-                <div class:list={["slide", { active: index === 0 }]}>
-                    <img
-                        src={image}
-                        alt={`CORE research group photo ${index + 1}`}
-                        loading={index === 0 ? "eager" : "lazy"}
-                    />
-                </div>
-            ))}
-        </div>
-
-        {images.length > 1 && (
-            <>
-                <button
-                    class="carousel-button previous"
-                    aria-label="Previous photo"
-                >
-                    ‹
-                </button>
-
-                <button
-                    class="carousel-button next"
-                    aria-label="Next photo"
-                >
-                    ›
-                </button>
-
-                <div class="carousel-dots">
-                    {images.map((_, index) => (
-                        <button
-                            class:list={[
-                                "dot",
-                                { active: index === 0 },
-                            ]}
-                            aria-label={`Go to photo ${index + 1}`}
+{
+    images.length > 0 && (
+        <div class="photo-carousel">
+            <div class="carousel-track">
+                {images.map((image, index) => (
+                    <div class:list={["slide", { active: index === 0 }]}>
+                        <img
+                            src={image}
+                            alt={`CORE research group photo ${index + 1}`}
+                            loading={index === 0 ? "eager" : "lazy"}
                         />
-                    ))}
-                </div>
-            </>
-        )}
-    </div>
-)}
+                    </div>
+                ))}
+            </div>
+
+            {images.length > 1 && (
+                <>
+                    <button
+                        class="carousel-button previous"
+                        aria-label="Previous photo"
+                    >
+                        ‹
+                    </button>
+
+                    <button
+                        class="carousel-button next"
+                        aria-label="Next photo"
+                    >
+                        ›
+                    </button>
+
+                    <div class="carousel-dots">
+                        {images.map((_, index) => (
+                            <button
+                                class:list={["dot", { active: index === 0 }]}
+                                aria-label={`Go to photo ${index + 1}`}
+                            />
+                        ))}
+                    </div>
+                </>
+            )}
+        </div>
+    )
+}
 
 <script>
-    const carousel = document.querySelector(".photo-carousel");
+import type { ZodNumberFormat } from "astro:schema";
 
-    if (carousel) {
+    function initCarousel() {
+        const carousel = document.querySelector<HTMLElement>(".photo-carousel");
+
+        if (!carousel || carousel.dataset.initialized === "true") return;
+
+        carousel.dataset.initialized = "true";
+
         const slides = carousel.querySelectorAll(".slide");
         const dots = carousel.querySelectorAll(".dot");
         const previous = carousel.querySelector(".previous");
@@ -98,8 +103,11 @@ const images = readdirSync(galleryPath)
             }, 5000);
         }
     }
-</script>
 
+    initCarousel();
+
+    document.addEventListener("astro:page-load", initCarousel);
+</script>
 <style>
     .photo-carousel {
         position: relative;
