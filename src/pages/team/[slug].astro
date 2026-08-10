@@ -1,0 +1,136 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+    const members = await getCollection("team");
+
+    return members.map((member) => ({
+        params: { slug: member.id },
+        props: { member },
+    }));
+}
+
+const { member } = Astro.props;
+const { Content } = await render(member);
+
+const d = member.data;
+---
+
+<BaseLayout title={`${d.name} | CORE`}>
+    <article class="profile">
+
+        <div class="hero">
+            <img src={d.photo} alt={d.name} class="photo" />
+
+            <div>
+                <h1>{d.name}</h1>
+
+                <p class="position">{d.position}</p>
+
+                <p class="affiliation">{d.affiliation}</p>
+
+                {d.pronouns && <p><strong>Pronouns:</strong> {d.pronouns}</p>}
+
+                {d.office && <p><strong>Office:</strong> {d.office}</p>}
+            </div>
+        </div>
+
+        <section>
+            <h2>Biography</h2>
+            <Content />
+        </section>
+
+        {d.research && (
+            <section>
+                <h2>Research Interests</h2>
+                <ul>
+                    {d.research.map(item => <li>{item}</li>)}
+                </ul>
+            </section>
+        )}
+
+        {d.education && (
+            <section>
+                <h2>Education</h2>
+                <ul>
+                    {d.education.map(item => <li>{item}</li>)}
+                </ul>
+            </section>
+        )}
+
+        {d.current_projects && (
+            <section>
+                <h2>Current Projects</h2>
+                <ul>
+                    {d.current_projects.map(item => <li>{item}</li>)}
+                </ul>
+            </section>
+        )}
+
+        {d.selected_publications && d.selected_publications.length > 0 && (
+            <section>
+                <h2>Selected Publications</h2>
+
+                <ul>
+                    {d.selected_publications.map(pub => (
+                        <li>
+                            {pub.url ? (
+                                <a href={pub.url} target="_blank">
+                                    {pub.citation}
+                                </a>
+                            ) : (
+                                pub.citation
+                            )}
+                        </li>
+                    ))}
+                </ul>
+            </section>
+        )}
+
+        {d.awards && d.awards.length > 0 && (
+            <section>
+                <h2>Awards</h2>
+
+                <ul>
+                    {d.awards.map(item => <li>{item}</li>)}
+                </ul>
+            </section>
+        )}
+
+    </article>
+</BaseLayout>
+
+<style>
+.profile{
+    max-width:900px;
+    margin:auto;
+}
+
+.hero{
+    display:flex;
+    gap:2rem;
+    margin-bottom:3rem;
+    align-items:flex-start;
+}
+
+.photo{
+    width:240px;
+    border-radius:12px;
+}
+
+.position{
+    font-size:1.2rem;
+    font-weight:600;
+    margin-bottom:.25rem;
+}
+
+.affiliation{
+    color:#666;
+    margin-bottom:1rem;
+}
+
+section{
+    margin-top:2.5rem;
+}
+</style>

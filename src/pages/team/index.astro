@@ -1,0 +1,126 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import MemberCard from "../../components/team/MemberCard.astro";
+import { getCollection } from "astro:content";
+
+const members = await getCollection("team");
+
+members.sort((a, b) => a.data.order - b.data.order);
+
+const director = members.find((member) => member.data.group === "director");
+
+const graduateResearchers = members.filter(
+    (member) => member.data.group === "graduate",
+);
+
+const undergraduateMembers = members.filter(
+    (member) => member.data.group === "undergraduate",
+);
+
+const affiliateResearchers = members.filter(
+    (member) => member.data.group === "affiliate",
+);
+
+const alumni = members.filter((member) => member.data.group === "alumni");
+---
+
+<BaseLayout title="Team | CORE">
+    <header class="page-header">
+        <h1 class="page-title">Our Team</h1>
+        <p class="page-subtitle">
+            Meet the researchers, students, and collaborators of CORE.
+        </p>
+    </header>
+
+    <section>
+        <h2>Director</h2>
+
+        {
+            director ? (
+                <MemberCard member={director} />
+            ) : (
+                <p>No director found.</p>
+            )
+        }
+    </section>
+
+    <section>
+        <h2>Graduate Researchers</h2>
+
+        <div class="member-grid">
+            {
+                graduateResearchers.map((member) => (
+                    <MemberCard member={member} />
+                ))
+            }
+        </div>
+    </section>
+
+    <section>
+        <h2>Undergraduate Members</h2>
+
+        <div class="member-grid">
+            {
+                undergraduateMembers.map((member) => (
+                    <MemberCard member={member} />
+                ))
+            }
+        </div>
+    </section>
+
+    <section>
+        <h2>Affiliate Researchers</h2>
+
+        <div class="member-grid">
+            {
+                affiliateResearchers.map((member) => (
+                    <MemberCard member={member} />
+                ))
+            }
+        </div>
+    </section>
+
+    <section>
+        <h2>Alumni</h2>
+
+        <ul class="alumni-list">
+            {
+                alumni.map((member) => (
+                    <li>
+                        <strong>{member.data.name}</strong> —{" "}
+                        {member.data.position}
+                    </li>
+                ))
+            }
+        </ul>
+    </section>
+
+    <style>
+        .member-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .member-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .alumni-list {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        .alumni-list li {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+    </style>
+</BaseLayout>

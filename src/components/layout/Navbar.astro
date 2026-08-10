@@ -4,7 +4,20 @@ import { NAV_LINKS, PAGES } from "../../config";
 const currentPath = Astro.url.pathname;
 ---
 
-<nav class="navbar">
+<nav class="navbar flex items-center gap-6">
+
+<a href="/" class="flex items-center gap-2" style="text-decoration: none;">
+    <img
+        src="/images/CORElogo.png"
+        alt="CORE Logo"
+        class="h-10 w-10 rounded-full object-cover"
+    />
+
+    <span class="font-bold text-lg">
+        CORE
+    </span>
+</a>
+
     <ul class="nav-links">
         {
             NAV_LINKS.filter((link) => {

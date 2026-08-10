@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import ResearchCard from "../../components/cards/ResearchCard.astro";
+
+const research = await getCollection("research");
+
+research.sort((a, b) => {
+    if (a.data.order !== b.data.order) {
+        return a.data.order - b.data.order;
+    }
+    return a.data.title.localeCompare(b.data.title);
+});
+---
+
+<BaseLayout title="Research | CORE">
+    <div class="container-narrow">
+        <header class="page-header">
+            <h1 class="page-title">Research</h1>
+            <p class="page-subtitle">
+                Current and completed research projects of the Conflict in Religion
+                Research Group.
+            </p>
+        </header>
+
+        <div class="grid gap-6">
+            {research.map((project) => (
+                <ResearchCard research={project} />
+            ))}
+        </div>
+    </div>
+</BaseLayout>

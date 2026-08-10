@@ -1,0 +1,85 @@
+---
+const { member } = Astro.props;
+
+const data = member.data ?? member;
+const slug = member.id ?? "";
+---
+
+<a href={`/team/${slug}`} class="member-card-link">
+    <article class="member-card">
+        <img
+            src={data.photo}
+            alt={data.name}
+            class="member-photo"
+        />
+
+        <div class="member-content">
+            <h3>{data.name}</h3>
+
+            <p class="member-position">
+                {data.position}
+            </p>
+
+            {data.summary && (
+                <p class="member-summary">
+                    {data.summary}
+                </p>
+            )}
+
+            {data.research && (
+                <p class="member-research">
+                    {data.research.join(" • ")}
+                </p>
+            )}
+        </div>
+    </article>
+</a>
+
+<style>
+.member-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.member-card {
+    display: flex;
+    gap: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+
+.member-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.member-content h3 {
+    margin: 0;
+}
+
+.member-position {
+    font-weight: 600;
+    margin: .25rem 0 .75rem;
+}
+
+.member-summary {
+    margin-bottom: .75rem;
+}
+
+.member-research {
+    color: #666;
+    font-size: .95rem;
+}
+</style>

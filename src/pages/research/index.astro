@@ -1,0 +1,82 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const research = await getCollection("research");
+
+console.log("Research entries:", research);
+
+research.sort((a, b) => a.data.order - b.data.order);
+---
+
+<BaseLayout title="Research | CORE">
+    <section>
+        <header class="page-header">
+            <h1 class="page-title">Current Research Projects</h1>
+            <p class="page-subtitle">
+                Explore the ongoing research projects conducted by CORE.
+            </p>
+        </header>
+
+        <div class="project-grid">
+            {
+                research
+                    .filter((project) => project.data.featured)
+                    .map((project) => (
+                        <a
+                            href={`/research/${project.id}`}
+                            class="project-card"
+                        >
+                            <h2>{project.data.title}</h2>
+
+                            <p>{project.data.summary}</p>
+
+                            <span class="status">{project.data.status}</span>
+                        </a>
+                    ))
+            }
+        </div>
+    </section>
+
+    <style>
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            padding: 1.5rem;
+
+            border: 1px solid #ddd;
+            border-radius: 12px;
+
+            text-decoration: none;
+            color: inherit;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .project-card h2 {
+            margin: 0;
+        }
+
+        .status {
+            margin-top: auto;
+            font-weight: 600;
+            opacity: 0.7;
+        }
+    </style>
+</BaseLayout>

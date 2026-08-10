@@ -1,28 +1,38 @@
 ---
-name: "Claude Shannon"
-avatar: "shannon.jpg"
-shortBio: "Mathematician and electrical engineer known as the 'Father of Information Theory'. Pioneer in digital computing and cryptography."
-institution: "MIT, Cambridge MA"
+name: "Conflict in Religion Laboratory"
+avatar: "core-logo.png"
+shortBio: "The Conflict in Religion Research Group (CORE) investigates religion through the lens of psychology."
+institution: "De La Salle University"
 ---
+The **Conflict in Religion Research Group (CORE)** is an interdisciplinary research group dedicated to understanding religion through the lens of psychology. Situated within the context of predominantly religious societies such as the Philippines, our work examines how religion shapes the way people think, feel, behave, and relate to one another across personal, social, cultural, and political life.
 
-I am a mathematician and electrical engineer best known for founding **Information Theory**. My work in the late 1940s established the theoretical foundations of modern digital communications and computing.
+Our research focuses on the psychological processes through which religion influences identity, morality, decision-making, and intergroup relations. We investigate both the constructive and harmful roles of religion, examining how religious beliefs and identities can foster meaning, belonging, and cooperation while also contributing to prejudice, exclusion, discrimination, and conflict under particular social and historical conditions.
 
-## My Life
+CORE is equally committed to understanding the experiences of secular, agnostic, atheist, and other nonreligious communities. We believe that a comprehensive psychology of religion must consider the diversity of worldviews that shape human experience and society.
 
-Born in Petoskey, Michigan on April 30, 1916, I showed an early aptitude for engineering and mathematics. After studying at the University of Michigan, I completed my PhD at MIT where I famously applied Boolean algebra to electrical circuits. My master's thesis on relay switching circuits is considered one of the most important master's theses ever written.
-
-During World War, I worked at Bell Labs on fire control systems and cryptography, which led to my seminal work in information theory.
-
-## Current Work
-
-I continue to work on various problems at the intersection of mathematics, engineering, and computer science. My interests include artificial intelligence, pattern recognition, game theory, and the fundamental limits of computation.
-
-I also enjoy juggling, unicycling, and playing the clarinet - I even built a juggling machine!
-
-## Research Interests
-
-My research focus includes: **Information Theory**, **Cryptography**, **Digital Computing**, **Artificial Intelligence**, **Game Theory**, and **Switching Circuits**.
+Beyond producing research, we aim to cultivate a community of scholars who are passionate about the psychological study of religion. Through rigorous, interdisciplinary, and socially engaged research, we aspire to generate knowledge that advances scholarship, informs public discourse, and contributes to more inclusive, collaborative, and compassionate societies.
 
 ---
 
-*"I am a mathematician. I am interested in the fundamental limits on the rate at which information can be transmitted."*
+## Mission
+
+To advance the psychological study of religion through rigorous, interdisciplinary research that examines how religious and nonreligious worldviews shape human thought, behavior, relationships, and society, while cultivating the next generation of scholars dedicated to this field.
+
+---
+
+## Vision
+
+To be a leading research group in the psychological study of religion, producing research that deepens scientific understanding, informs public discourse, and contributes to societies where religious diversity is approached with empathy, critical inquiry, and mutual respect.
+
+---
+
+## Research Areas
+
+- Psychology of Religion
+- Religious Cognition
+- Religious Conflict and Cooperation
+- Moral Psychology
+- Social Identity and Intergroup Relations
+- Prejudice, Discrimination, and Social Harm
+- Secular, Agnostic, and Nonreligious Communities
+- Philippine Psychology and Cross-Cultural Research
