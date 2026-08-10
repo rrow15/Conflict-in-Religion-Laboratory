@@ -47,7 +47,7 @@ const types = [
                             {item.data.image && (
                                 <div class="news-image">
                                     <img
-                                        src={`${import.meta.env.BASE_URL}${item.data.image.replace(/^\/+/, "")}`}
+                                        src={`${import.meta.env.BASE_URL}/${item.data.image.replace(/^\/+/, "")}`}
                                         alt=""
                                         loading="lazy"
                                     />
