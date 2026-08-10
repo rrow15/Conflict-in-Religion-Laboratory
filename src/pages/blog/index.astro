@@ -24,7 +24,7 @@ posts.sort((a, b) => {
                 posts.map((post) => (
                     <article class="post">
                         {post.data.image && (
-                            <a href={`/blog/${post.id}`} class="post-image">
+                            <a href={`${import.meta.env.BASE_URL}/blog/${post.id}`} class="post-image">
                                 <img
                                     src={`${import.meta.env.BASE_URL}${post.data.image}`}
                                     alt=""
@@ -54,7 +54,8 @@ posts.sort((a, b) => {
                             </div>
 
                             <h2>
-                                <a href={`/blog/${post.id}`}>
+                                <a href={`${import.meta.env.BASE_URL}/blog/${post.id}`}
+                                
                                     {post.data.title}
                                 </a>
                             </h2>
