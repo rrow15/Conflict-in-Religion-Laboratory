@@ -8,7 +8,7 @@ const slug = member.id ?? "";
 <a href={`/team/${slug}`} class="member-card-link">
     <article class="member-card">
         <img
-            src={`${import.meta.env.BASE_URL}${data.photo.replace(/^\/+/, "")}`}
+            src={`${import.meta.env.BASE_URL}${data.photo}`}
             alt={data.name}
             class="member-photo"
         />

@@ -20,7 +20,7 @@ export default defineConfig({
     },
 
     site: 'https://rrow15.github.io',
-    base: '/Conflict-in-Religion-Laboratory/',
+    base: '/Conflict-in-Religion-Laboratory',
 
     integrations: [sitemap()],
 });

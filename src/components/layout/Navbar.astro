@@ -6,12 +6,12 @@ const currentPath = Astro.url.pathname;
 
 <nav class="navbar flex items-center gap-6">
     <a
-        href={import.meta.env.BASE_URL}
+        href={`${import.meta.env.BASE_URL}/`}
         class="flex items-center gap-2"
         style="text-decoration: none;"
     >
         <img
-            src={`${import.meta.env.BASE_URL}images/CORElogo.png`}
+            src={`${import.meta.env.BASE_URL}/images/CORElogo.png`}
             alt="CORE Logo"
             class="h-10 w-10 rounded-full object-cover"
         />
@@ -33,9 +33,10 @@ const currentPath = Astro.url.pathname;
                     <a
                         href={
                             link.href === "/"
-                                ? import.meta.env.BASE_URL
-                                : `${import.meta.env.BASE_URL}${link.href.replace(/^\/+/, "")}`
+                                ? `${import.meta.env.BASE_URL}/`
+                                : `${import.meta.env.BASE_URL}${link.href}`
                         }
+
                         class={`nav-link ${
                             currentPath === link.href ||
                             (link.href !== "/" &&

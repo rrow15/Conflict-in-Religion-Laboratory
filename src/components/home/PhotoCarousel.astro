@@ -6,7 +6,7 @@ const galleryPath = path.join(process.cwd(), "public", "gallery");
 
 const images = readdirSync(galleryPath)
     .filter((file) => /\.(jpg|jpeg|png|webp|gif)$/i.test(file))
-    .map((file) => `${import.meta.env.BASE_URL}gallery/${file}`);
+    .map((file) => `${import.meta.env.BASE_URL}/gallery/${file}`);
 ---
 
 {images.length > 0 && (

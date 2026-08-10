@@ -21,7 +21,7 @@ const d = member.data;
     <article class="profile">
 
         <div class="hero">
-            <img src={d.photo} alt={d.name} class="photo" />
+            <img src={`${import.meta.env.BASE_URL}${member.data.photo}`} alt={d.name} class="photo" />
 
             <div>
                 <h1>{d.name}</h1>
