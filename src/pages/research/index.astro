@@ -24,7 +24,7 @@ research.sort((a, b) => a.data.order - b.data.order);
                     .filter((project) => project.data.featured)
                     .map((project) => (
                         <a
-                            href={`/research/${project.id}`}
+                            href={`${import.meta.env.BASE_URL}/research/${project.id}`}
                             class="project-card"
                         >
                             <h2>{project.data.title}</h2>
