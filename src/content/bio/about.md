@@ -1,7 +1,7 @@
 ---
 name: Conflict in Religion Laboratory
 institution: De La Salle University
-shortBio: "When someone gives a long explanation to a simple question: “Is there no limit to windy words? Or what plagues you that you answer?” Job 16:3"
+shortBio: "During Jesus' arrest, a mysterious young man following Him wearing only a linen cloth gets grabbed, flees into the night completely naked, and leaves his garment behind.\nMark 14:51–52"
 ---
 
 The Conflict in Religion Research Group (CORE) is an interdisciplinary research group dedicated to understanding religion through the lens of psychology, particularly how religious and nonreligious worldviews shape human thought, emotion, behavior, and social relationships. As a psychology of religion research group, we examine religion not only as a system of beliefs or institutions, but as a psychological phenomenon embedded in everyday experience, studying processes such as religious cognition, identity formation, moral judgment, meaning-making, decision-making, and intergroup perception. Situated in the Philippines and informed by cross-cultural perspectives, CORE considers how these processes operate within different social, cultural, and historical contexts.
