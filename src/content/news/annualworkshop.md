@@ -1,9 +1,8 @@
 ---
-title: "WELCOME MARGE"
+title: "CORE website launch"
 date: "2026-08-11"
-type: "Events & Activities"
-image: "/images/news/marge
-.jpg"
+type: "celebration"
+image: "/images/news/jesus.jpg"
 ---
 
-Hi marge thanks for checking out the website
+We finally have a website for CORE!
