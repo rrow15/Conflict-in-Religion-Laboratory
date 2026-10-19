@@ -27,9 +27,9 @@ selected_publications: []
 
 awards: []
 
-featured: false
+featured: true
 
-order: 3
+order:
 ---
 
 ## Bio Note
