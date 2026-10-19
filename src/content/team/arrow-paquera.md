@@ -9,7 +9,7 @@ research:
   - "Psychology of Religion"
 
 featured: true
-order:
+order: 1
 ---
 
-Test bio.
+yea yea.
