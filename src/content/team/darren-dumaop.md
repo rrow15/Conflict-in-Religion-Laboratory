@@ -12,12 +12,13 @@ photo: /images/team/darren-dumaop.jpg
 summary: Studies intergroup conflict and political psychology.
 
 research:
-  - Social Identity
-  - Political Psychology
-  - Conflict Resolution
+  - Psychology of Irreligion, Secularism, & Humanism
+  - Religion and Public Life, Power, & Social Influences
+  - Religious Identity & Transformation
+  - Religious/Covenantal Pluralism
 
 education:
-  - BS Psychology, CORE University
+  - Ph.D. in Psychology, University of the Philippines Diliman
 
 current_projects:
   - Identity and Conflict
@@ -33,4 +34,4 @@ order: 3
 
 ## Bio Note
 
-Bombardino Crocodilo studies intergroup relations and identity-based conflict.
+Dr. Darren E. Dumaop is an Associate Professor and Associate Dean of the College of Liberal Arts at De La Salle University (DLSU). He holds a PhD in Psychology, majoring in Social Psychology with a minor in Personality, from the University of the Philippines Diliman. He is the inaugural director of DLSU’s Conflict in Religion Psychology Research Laboratory (CORE Lab). His professional leadership includes roles as former Vice President of the Pambansang Samahan sa Sikolohiyang Pilipino and former Chair of the Psychological Association of the Philippines' Social Psychology Division. Additionally, Dr. Dumaop is an alumnus of the University Centre Saint-Ignatius Antwerp Summer School in Belgium and a fellow in the British Academy’s Religion and Public Life in the Philippines program.
