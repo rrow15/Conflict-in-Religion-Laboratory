@@ -29,7 +29,7 @@ awards: []
 
 featured: true
 
-order:
+order: 1
 ---
 
 ## Bio Note
