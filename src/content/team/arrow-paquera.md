@@ -1,6 +1,6 @@
 ---
 name: "Arrow Paquera"
-group: "director"
+group: "graduate"
 position: "Director"
 affiliation: "Conflict in Religion Research Group"
 photo: "/images/team/arrow-paquera.jpg"
