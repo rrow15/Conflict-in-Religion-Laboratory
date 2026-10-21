@@ -17,15 +17,15 @@ research:
   - Kapwa psychology
 
 education:
-  - PhD Psychology, De La Salle University, Manila
-  - MSc Psychology, De La Salle University, Manila
+  - PhD in Psychology (current), De La Salle University, Manila
+  - MSc in Psychology, De La Salle University, Manila
 
 
 current_projects:
   - Conversion from high-cost religions from the convert family's perspective
 
 
-selected_publications: [Dumaop, D., Maloles, P., Cruz, M. et al. Conversions from High-Cost Religious Groups: Narratives From a Non-WEIRD Family-Centered Culture. Pastoral Psychol (2026). https://doi.org/10.1007/s11089-026-01359-y]
+selected_publications: [Dumaop, D., Maloles, P.B., Cruz, M. E., & Ng-Tan, L. (2026). Conversions from high-cost religious groups: Narratives from a non-WEIRD family-centered culture. Pastoral Psychology, pp. 1–20. https://doi.org/10.1007/s11089-026-01359-y]
 
 awards: [Alfredo V. Lagmay Award for Psychological Research]
 
@@ -36,3 +36,4 @@ order: 2
 
 ## Bio Note
 
+Ena works at the place where cultures make sense of themselves. As an educator, she teaches psychology to students who will one day ask the same questions of their own communities that she now asks of hers. As a PhD candidate, she is building a scholarly life around the indigenous psychological traditions of the Philippines: inward-facing, unapologetically situated, resistant to explanation on someone else's terms.She delves into Sikolohiyang Pilipino's  loob and kapwa not as concepts to define, but as ways of being she takes seriously as psychology in their own right. She does not discard Western frameworks. She puts them in conversation with what is already here, and asks what gets lost in translation, and what does not need translating at all. She advises thesis work the way she conducts her own research, patiently and attentive to what people say about themselves before deciding what to say about them.
