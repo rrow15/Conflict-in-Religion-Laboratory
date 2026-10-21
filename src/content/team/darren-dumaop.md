@@ -23,9 +23,9 @@ education:
 current_projects:
   - Identity and Conflict
 
-selected_publications: []
+selected_publications: [Dumaop, D., Maloles, P., Cruz, M. et al. Conversions from High-Cost Religious Groups: Narratives From a Non-WEIRD Family-Centered Culture. Pastoral Psychol (2026). https://doi.org/10.1007/s11089-026-01359-y]
 
-awards: []
+awards: [Alfredo V. Lagmay Award for Psychological Research]
 
 featured: true
 
