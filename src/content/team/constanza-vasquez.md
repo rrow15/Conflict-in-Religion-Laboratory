@@ -23,8 +23,7 @@ education:
 
 
 current_projects:
-  - Religious Extremism in Southeast Asia (Research Assistant)
-  - Moral Decision-Making among Filipino Adolescents (Principal Investigator)
+  - Research on stress, religious/spiritual struggles, God representations, and distress
 
 
 selected_publications: []
