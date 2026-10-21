@@ -18,7 +18,7 @@ research:
   - Cross-Cultural Mental Health
 
 education:
-  - MSc in Psychology, Major in Clinical Psychology (current), De La Salle University, Manila
+  - MA in Psychology, Major in Clinical Psychology (current), De La Salle University, Manila
   - Licenciatura en Psicología, Universidad Adventista de Chile
 
 
