@@ -9,7 +9,7 @@ research:
   - "Psychology of Religion"
 
 featured: true
-order: 1
+order: 3
 ---
 
 yea yea.
