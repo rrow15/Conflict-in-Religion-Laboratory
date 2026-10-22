@@ -2,7 +2,7 @@
 title: "Celebrating the release of CORE Lab's first publication!"
 date: "2026-08-03"
 type: "Celebration"
-image: "/images/news/congratulations.jpg"
+image: "/images/news/first-publication.jpg"
 ---
 
 🎉 Celebrating a Major Milestone! 🎉
