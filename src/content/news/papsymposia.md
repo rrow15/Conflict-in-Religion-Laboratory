@@ -2,7 +2,7 @@
 title: "PAP Annual Convention Day 3: Symposia and presentations by CORE Lab"
 date: "2026-09-20"
 type: "Events & Activities"
-image: "/images/news/research-roundtable.jpg"
+image: "/images/news/symposia.jpg"
 ---
 
 𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐮𝐬 𝐈𝐝𝐞𝐧𝐭𝐢𝐭𝐲, 𝐂𝐨𝐧𝐯𝐞𝐫𝐬𝐢𝐨𝐧, 𝐚𝐧𝐝 𝐏𝐥𝐮𝐫𝐚𝐥𝐢𝐬𝐦 𝐢𝐧 𝐚 𝐂𝐡𝐚𝐧𝐠𝐢𝐧𝐠 𝐒𝐨𝐜𝐢𝐞𝐭𝐲 (𝟗:𝟑𝟎𝐀𝐌 𝐭𝐨 𝟏𝟏:𝟎𝟎𝐀𝐌, 𝐑𝐨𝐨𝐦 𝐁𝟐𝟎𝟒) 𝐰𝐢𝐭𝐡 𝐂𝐨𝐧𝐯𝐞𝐧𝐨𝐫 𝐃𝐫. 𝐃𝐚𝐫𝐫𝐞𝐧 𝐄. 𝐃𝐮𝐦𝐚𝐨𝐩
