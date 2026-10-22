@@ -23,10 +23,14 @@ education:
 current_projects:
   - Catholic Nationalism and Women’s Health
 
-selected_publications: [Dumaop, D., Maloles, P.B., Cruz, M. E., & Ng-Tan, L. (2026). Conversions from high-cost religious groups: Narratives from a non-WEIRD family-centered culture. Pastoral Psychology, pp. 1–20. https://doi.org/10.1007/s11089-026-01359-y]
+selected_publications:
+  - citation: "Dumaop, D., Maloles, P.B., Cruz, M. E., & Ng-Tan, L. (2026). Conversions from high-cost religious groups: Narratives from a non-WEIRD family-centered culture. Pastoral Psychology, pp. 1–20."
+    url: "https://doi.org/10.1007/s11089-026-01359-y"
 
-awards: [Magna Cum Laude from University of the Philippines, Diliman, Alfredo V. Lagmay Award for Psychological Research]
-
+awards:
+  - "Magna Cum Laude from University of the Philippines, Diliman"
+  - "Alfredo V. Lagmay Award for Psychological Research"
+  
 featured: false
 
 order: 3
