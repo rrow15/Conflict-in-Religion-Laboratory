@@ -1,6 +1,6 @@
 ---
 title: "CORE's first publication wins Lagmay Research Award!"
-date: "2026-08-18"
+date: "2026-09-25"
 type: "Congratulations"
 image: "/images/news/lagmayaward.jpg"
 ---
