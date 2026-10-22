@@ -1,6 +1,6 @@
 ---
 title: "Celebrating the release of CORE Lab's first publication!"
-date: "2026-08-03"
+date: "2026-08-18"
 type: "Celebration"
 image: "/images/news/first-publication.jpg"
 ---
