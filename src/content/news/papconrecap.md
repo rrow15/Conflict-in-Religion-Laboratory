@@ -1,7 +1,7 @@
 ---
 title: "Recap: CORE Lab holds sessions along with ADMU FLIPP and DLSU Spirit Lab"
 date: "2026-09-28"
-type: "Events"
+type: "Events & Activities"
 image: "/images/news/papconrecap.jpg"
 ---
 
